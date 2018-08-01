@@ -1,16 +1,16 @@
-#My own makefile for ML lab 1
+#My own makefile for ML lab 2
 
 #Declare variables
 CC=g++
 LIBS=-lm
 
-#First create ".exe" called kmeans
-kmeans: Lab1-Kmeans.o
-	$(CC) Lab1-Kmeans.o -o kmeans $(LIBS)
+#First create ".exe" called finds
+finds: FindS.o
+	$(CC) FindS.o -o finds $(LIBS)
 
 #Need to make Audio.o file though
-Lab1-Kmeans.o: Lab1-Kmeans.cpp
-	$(CC) -c Lab1-Kmeans.cpp
+FindS.o: FindS.cpp
+	$(CC) -c FindS.cpp
 
 
 #Other rules
@@ -18,8 +18,8 @@ Lab1-Kmeans.o: Lab1-Kmeans.cpp
 #Clean .o and exe
 clean:
 	@rm -f *.o
-	@rm -f kmeans
+	@rm -f finds
 
 #To run program
 run:
-	./kmeans
+	./finds

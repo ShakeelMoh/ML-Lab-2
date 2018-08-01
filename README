@@ -1,0 +1,10 @@
+Training examples:
+
+Example 1 {"Sunny", "Warm", "Normal", "Strong", "Warm", "Same", "Yes"} 
+Example 2 {"Sunny", "Warm", "High", "Strong", "Warm", "Same", "Yes"}
+Example 3 {"Rainy", "Cold", "High", "Strong", "Warm", "Change", "No"}
+Example 4 {"Sunny", "Warm", "High", "Strong", "Cool", "Change", "Yes"}
+Example 5 {"Sunny", "Warm", "High", "Weak", "Cool", "Change", "Yes"}
+
+There needs to be the 5 training examples used about in order to learn the target concept:
+ <"Sunny", "Warm", ?, ?, ?, ?>
